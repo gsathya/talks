@@ -1,0 +1,170 @@
+\documentclass{beamer}
+\usepackage{graphics}
+%\usetheme[compress]{Dresden}
+\usetheme{Malmoe}
+\usecolortheme{seagull}
+\useinnertheme{default}
+\title{Practical Python Programming}
+\author{Sathyanarayanan Gunasekaran}
+\institute{CEG Linux Users Group}
+\usepackage{listings}
+\begin{document}
+\maketitle
+\begin{frame}
+ \tableofcontents
+\end{frame}
+ \section{Python}
+  \subsection{What is Python?}
+  \begin{frame}
+   \vskip1.5cm
+   Python is a general purpose, high-level programming language
+  \vskip2.5cm
+   %\vfill
+   \begin{center}
+    \includegraphics[height=1cm]{python_logo.png}
+   \end{center}
+  \end{frame}
+  \subsection{Why Python?}
+  \begin{frame} {Python's features:}
+   \begin{itemize}
+    \item <2-> High-level
+    \item <3-> Powerful 
+    \item <4-> Interpreted
+    \item <5-> Clean syntax
+    \item <6-> Dynamically typed
+    \item <7-> Easy to learn
+   \end{itemize}
+  \end{frame}
+ \section{Basics}
+  \subsection{The Interpreter}
+  \begin{frame} {Start the interpreter}
+   \begin{enumerate}
+    \item <2-> Open a terminal
+    \item <3-> \texttt{ipython}
+   \end{enumerate}
+  \end{frame}
+  \subsection{Hello, world}
+  \begin{frame} {Optional first Python program}
+   \large{\texttt{print 'Hello, world'}} \\
+  \end{frame}
+  \subsection{Types}
+\begin{frame} {Built-in types}
+ \begin{itemize}
+  \item int, float
+  \item str
+  \item list
+  \item tuple
+  \item dictionary
+ \end{itemize}
+\end{frame}
+ \begin{frame}
+  \begin{center}
+   \huge{demo}
+  \end{center}
+ \end{frame}
+\begin{frame} {List operations}
+ %append, delete, push, pop etc.
+ \begin{itemize}
+  \item Basic functions
+  \item List comprehensions
+ \end{itemize}
+ \end{frame}
+  \begin{frame} {Dictionaries}
+ \begin{itemize}
+  \item Basic functions 
+ \end{itemize}
+  \end{frame}
+\subsection{Control Flow}
+\begin{frame} {Changing the flow of control}
+ \begin{itemize}
+  \item if, else, elif
+  \item while
+  \item for
+ \end{itemize}
+\end{frame}
+\begin{frame} {Whitespace sensitive}
+ \begin{center} 
+ \begin{block} {\texttt{if} block}
+  \large{
+ \texttt{
+ \lstset{language=Python,showstringspaces=false}
+ \lstinputlisting{whitespace}
+ }
+}
+ \end{block}
+ \end{center}
+ Statements 1,2 and 3 are in the \texttt{if} block
+ %\vfill
+ %\large{Python is whitespace sensitive.}
+\end{frame}
+\subsection{Functions}
+\begin{frame} {Defining a function}
+\begin{center}
+ \begin{block} {Squaring a number}
+  \large{
+ \texttt{
+ \lstset{language=Python,showstringspaces=false}
+ \lstinputlisting{square.py}
+ }
+}
+ \end{block}
+\end{center}
+\end{frame}
+ \begin{frame} {Iterating over lists}
+\begin{center} 
+\begin{block} {Prints numbers}
+ \large{
+ \texttt{
+ \lstset{language=Python,showstringspaces=false}
+ \lstinputlisting{range.py}
+ }
+}
+\end{block}
+ %\vfill
+\end{center}
+  \end{frame}
+\begin{frame}
+ \begin{center}
+\begin{block} {Prints list elements}
+ \large{
+ \texttt{
+ \lstset{language=Python, showstringspaces=false}
+ \lstinputlisting{iterate.py}
+ }
+}
+\end{block}
+\end{center}
+  \end{frame}
+\section{Simple scripts}
+\begin{frame} {Text to HTML}
+ \begin{enumerate}
+  \item Read file
+  \item Convert it into a list
+  \item Insert \texttt{<br>} as appropriate
+ \end{enumerate}
+\end{frame}
+\begin{frame} {Web}
+ \begin{enumerate}
+  \item Django
+  \item Flask
+  \item Twisted
+ \end{enumerate}
+ \end{frame}
+ \section{Beyond}
+ \begin{frame} {Code}
+  \begin{itemize} 
+   \item Read
+   \item Write
+   \item Execute
+  \end{itemize}
+  \end{frame}
+\begin{frame} [plain]
+ \begin{center}
+  \includegraphics[height=2cm]{ceglug.jpg}
+ \end{center}
+ \begin{center}
+  gsathya@torproject.org \\
+  ceglug@googlegroups.com
+ \end{center}    
+\end{frame}
+\end{document}
